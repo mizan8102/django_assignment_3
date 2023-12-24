@@ -1,24 +1,22 @@
-{% extends "base.html" %} {% block content %}
+{% extends "base.html" %} {% block content %} {% load static %}
 <div class="hero-container" id="hero-sec">
   <div class="container-fluid">
     <div class="row d-flex">
       <div class="col align-middle">
         <div class="px-2 py-2">
-          <img
-            src="https://static.vecteezy.com/system/resources/previews/008/635/459/non_2x/man-cartoon-character-eating-healthy-vegetables-salad-flat-illustration-isolated-healthy-vegetarian-food-and-dieting-business-lunch-time-break-eating-at-home-or-restaurant-cafe-free-vector.jpg"
-            class="img-fluid" height="80%"
-            alt="..."
-          />
+          <img src="{% static "images/food.jpg" %}" class="img-fluid"
+          height="80%" alt="..." />
         </div>
       </div>
       <div class="col">
         <div class="px-5 py-5 mt-5">
           <div class="px-2 py-2 align-middle">
-            <h4>A Dining Experience Like No Other
-
-            </h4>
+            <h4>A Dining Experience Like No Other</h4>
             <p>
-                Immerse yourself in an inviting ambiance where every detail is designed to enhance your dining pleasure. From the warm hospitality to the elegant decor, [Restaurant Name] is more than a meal—it's an experience.
+              Immerse yourself in an inviting ambiance where every detail is
+              designed to enhance your dining pleasure. From the warm
+              hospitality to the elegant decor, [Restaurant Name] is more than a
+              meal—it's an experience.
             </p>
           </div>
           <div class="px-2 py-2">
@@ -30,10 +28,6 @@
       </div>
     </div>
   </div>
-  
-
-
-
 
   {% endblock content %}
 </div>
